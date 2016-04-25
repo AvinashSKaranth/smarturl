@@ -1,14 +1,10 @@
 <?php
 	define("APP_NAME", "Smarturl");
 	define("WEBSITE_URL", "smarturl.gq");
-	//define("PUBLIC_DIRECTORY", "/home/nashappi/smarturl.gq/");
-	//define("APP_DIRECTORY", "/home/nashappi/smarturl.gq/");
-	//define("ROOT_DIRECTORY", "/home/nashappi/smarturl.gq/");
-	//define("APP_EMAIL_ID", "hey@smarturl.gq");
 	define("DB_SERVER", "localhost");
-	define("DB_NAME", "nashappi_smurl");
-	define("DB_USER", "nashappi_smurl");
-	define("DB_PASS", "tITav4RFw5a6");
+	define("DB_NAME", "smarturl_db");
+	define("DB_USER", "smarturl_db");
+	define("DB_PASS", "password");
 	
 	if(session_id() == '') {
 		session_start();
