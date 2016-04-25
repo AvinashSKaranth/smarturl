@@ -1,0 +1,13 @@
+# Use PHP 5.5
+# AddHandler application/x-httpd-php55 .php
+
+<IfModule mod_suphp.c>
+suPHP_ConfigPath /opt/php55/lib
+</IfModule>
+
+ErrorDocument 404 http://smarturl.gq/
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/]*)/?$ index.php?id=$1 [L]
